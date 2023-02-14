@@ -4,3 +4,5 @@
 2. Criação do repositório remoto no gitHub e link do repo local com o remoto
 3. Criação das pastas que serão utilizadas no projeto: components, pages e img.
 4. Criação da branch "searchPage" para fazer a página de busca
+5. Estruturação inicial e CSS básico do formulario de busca
+6. Fazer a lógica da busca 

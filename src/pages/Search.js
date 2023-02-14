@@ -1,19 +1,36 @@
-import './Search.css';
+import "./Search.css";
 
 function Search() {
-  return (
-    <section className='searchContainer'>
-      <h1 className='searchTitle'>Buscar</h1>
-      <p className='searchParagraph'>Selecione um tribunal para listar os processos ou buscar pelo número unificado</p>
-      <form className='searchForm'>
-        <label>
-          <input type='number' />
-        </label>
-        <label>
-          <input type='number' placeholder='Número do processo'/>
-        </label>
-        <input type='submit' value='Buscar' />
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("enviou!");
+  };
 
+  return (
+    <section className="searchContainer">
+      <h1 className="searchTitle">Buscar</h1>
+      <p className="searchParagraph">
+        Selecione um tribunal para listar os processos ou buscar pelo número
+        unificado
+      </p>
+      <form onSubmit={handleSubmit} className="searchForm">
+        <label htmlFor="tribunal">
+          <input 
+            type="text"
+            name="tribunal" 
+            placeholder="Tribunal" 
+            required
+          />
+        </label>
+        <label htmlFor="numeroProcesso">
+          <input
+            type="number"
+            name="numeroProcesso"
+            placeholder="Número do processo"
+            required
+          />
+        </label>
+        <input type="submit" value="Buscar" />
       </form>
     </section>
   );
