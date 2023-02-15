@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "cnj": "5001682-88.2020.8.13.0672",
+      "nome das partes": "Amanda",
+      "tribunal": "TJSP",
+      "date": "18.05.2022",
+      "movimentacao": {
+        "date": "15.02.2023",
+        "descricao": "aconteceu isso"
+      }
+    },
+    {
+      "id": 2,
+      "cnj": "5001682-88.2020.8.13.0673",
+      "nome das partes": "Bruna",
+      "tribunal": "TJSP",
+      "date": "19.05.2022",
+      "movimentacao": {
+        "date": "12.02.2023",
+        "descricao": "aconteceu nada"
+      }
+    },
+    {
+      "processNumber": "123",
+      "id": 3
+    }
+  ]
+}

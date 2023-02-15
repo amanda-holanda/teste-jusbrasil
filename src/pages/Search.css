@@ -1,0 +1,20 @@
+.searchContainer {    
+    background-color: lightgray;
+    margin: 10%;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.searchTitle {    
+    width: 100%;
+}
+
+.searchParagraph {    
+    width: 100%;
+}
+
+.searchForm {
+    display: flex;       
+}
