@@ -9,7 +9,7 @@ function Search() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    const dataSearch = {
+    /*const dataSearch = {
       processNumber
     }      
     //envio para API
@@ -22,7 +22,7 @@ function Search() {
         "Content-Type": "application/json",
       },
     });
-
+    */
 
     setProcessNumber(""); //envia o o input
   };
