@@ -8,16 +8,17 @@ const Home = () => {
     const[tribunalOrigin, setTribunalOrigin] = useState("");
     const [loadingData, setLoadingData] = useState({});
 
-    const loadData = async(tribunalOrigin) => {
+    const loadData = async(tribunalOrigin, processNumber) => {
+        console.log(tribunalOrigin, processNumber)
         const res = await fetch(API + "db.json");
         const dataLoaded = await res.json();
         setLoadingData(tribunalOrigin);
-        console.log("os dados carregados: " + dataLoaded);
+        console.log("os dados carregados: ", dataLoaded);
     }
 
     return (
         <>
-        <Search loadData={loadData} />
+        <Search onSearch={loadData} />
         <Display />
         </>
     )

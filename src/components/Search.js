@@ -1,7 +1,7 @@
 import "./Search.css";
 import { useState } from "react";
 
-function Search(loadData) {
+function Search(props) {
   const [tribunalOrigin, setTribunalOrigin] = useState("");
   //const [info, setInfo] = useState({});
   const [processNumber, setProcessNumber] = useState("");
@@ -9,14 +9,13 @@ function Search(loadData) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    setTribunalOrigin("");    
+  
     console.log("clicou");
-    loadData(tribunalOrigin);
+    props.onSearch(tribunalOrigin, processNumber);
    
     //setProcessNumber(""); //envia o o input
     /*const dadosFiltrados = (tribunalOrigin)=>{
-      return info.data.filter(item => item.includes(tribunalOrigin));        
+      return info.data.filter(item => item.tribunal === tribunalOrigin);        
     };
     console.log(dadosFiltrados);*/
   };  
@@ -42,14 +41,16 @@ function Search(loadData) {
       </p>
       <form onSubmit={handleSubmit} className="searchForm">
         <label htmlFor="tribunal">
-          <input
-            type="text"
-            name="tribunal"
-            placeholder="Tribunal de Origem"
-            onChange={(e) => setTribunalOrigin(e.target.value)}
-            value={tribunalOrigin}
+          <select            
+            name="tribunal"            
+            onChange={(e) => setTribunalOrigin(e.target.value)}            
             //required
-          />
+          >
+            <option value="">Selecione o tribunal</option>
+            <option value="TJSP">TJSP</option>
+            <option value="TJCE">TJCE</option>
+            <option value="TJPI">TJPI</option>
+          </select>
         </label>
         <label htmlFor="numeroProcesso">
           <input
