@@ -5,7 +5,8 @@ import Search from "../components/Search";
 const API = "Http://localhost:3000/";
 
 const Home = () => {
-  
+  const [getDataFiltred, setGetDataFiltred] = useState();
+     
   const loadData = async (tribunalOrigin, processNumber) => {    
     const res = await fetch(API + "db.json");
     const dataLoaded = await res.json();
@@ -19,13 +20,20 @@ const Home = () => {
       (item) => item.tribunal === tribunalOrigin
     );
     console.log("os dados filtrados por tribunal: ", dataFiltred);    
+    /*getDataFiltred(dataFiltred);   */ 
   };
-
+  
+  
+  /*const getDataFiltred = (dataFiltred) => {
+    console.log("estão aqui: ", dataFiltred)
+    return dataFiltred;
+  }*/
+ 
    
   return (
     <>
       <Search onSearch={loadData} />
-      <Display />
+      <Display onDisplay={filterData}/>
     </>
   );
 };

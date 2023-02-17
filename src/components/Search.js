@@ -1,24 +1,14 @@
 import "./Search.css";
 import { useState } from "react";
 
-function Search(propsSearch) {
-  const [tribunalOrigin, setTribunalOrigin] = useState("");  
-  const [processNumber, setProcessNumber] = useState(""); 
+function Search(props) {
+  const [tribunalOrigin, setTribunalOrigin] = useState("");
+  const [processNumber, setProcessNumber] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
-    console.log("clicou");
-    propsSearch.onSearch(tribunalOrigin, processNumber);
-    
-    
-   
-    //setProcessNumber(""); //envia o o input
-    /*const dadosFiltrados = (tribunalOrigin)=>{
-      return info.data.filter(item => item.tribunal === tribunalOrigin);        
-    };
-    console.log(dadosFiltrados);*/
-  }; 
+    props.onSearch(tribunalOrigin, processNumber);
+  };
 
   return (
     <section className="searchContainer">
@@ -29,10 +19,9 @@ function Search(propsSearch) {
       </p>
       <form onSubmit={handleSubmit} className="searchForm">
         <label htmlFor="tribunal">
-          <select            
-            name="tribunal"            
+          <select
+            name="tribunal"
             onChange={(e) => setTribunalOrigin(e.target.value)}            
-            //required
           >
             <option value="">Selecione o tribunal</option>
             <option value="TJSP">TJSP</option>
@@ -47,11 +36,10 @@ function Search(propsSearch) {
             placeholder="Número do processo"
             onChange={(e) => setProcessNumber(e.target.value)}
             value={processNumber}            
-            //required
           />
         </label>
         <button type="submit">Buscar</button>
-      </form>      
+      </form>
     </section>
   );
 }
