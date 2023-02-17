@@ -1,36 +1,24 @@
 import "./Search.css";
 import { useState } from "react";
 
-function Search(props) {
-  const [tribunalOrigin, setTribunalOrigin] = useState("");
-  //const [info, setInfo] = useState({});
-  const [processNumber, setProcessNumber] = useState("");
-  
+function Search(propsSearch) {
+  const [tribunalOrigin, setTribunalOrigin] = useState("");  
+  const [processNumber, setProcessNumber] = useState(""); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
   
     console.log("clicou");
-    props.onSearch(tribunalOrigin, processNumber);
+    propsSearch.onSearch(tribunalOrigin, processNumber);
+    
+    
    
     //setProcessNumber(""); //envia o o input
     /*const dadosFiltrados = (tribunalOrigin)=>{
       return info.data.filter(item => item.tribunal === tribunalOrigin);        
     };
     console.log(dadosFiltrados);*/
-  };  
-
-  /*useEffect(()=> {
-    if(tribunalOrigin) {
-      fetch(API + "db.json")
-      .then((response) => response.json())
-      .then((response) => {
-        setInfo(response);
-        console.log(response);
-      })
-    }
-
-  }, [tribunalOrigin]);*/
+  }; 
 
   return (
     <section className="searchContainer">
@@ -58,7 +46,7 @@ function Search(props) {
             name="numeroProcesso"
             placeholder="Número do processo"
             onChange={(e) => setProcessNumber(e.target.value)}
-            value={processNumber}
+            value={processNumber}            
             //required
           />
         </label>
