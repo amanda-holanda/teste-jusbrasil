@@ -1,6 +1,7 @@
 import "./ProcessTable.css"
 
-const ProcessTable = () => {
+const ProcessTable = ({listMovements}) => {
+  console.log(listMovements)
   return (
     <table className="processTable">
       <thead>
@@ -9,9 +10,7 @@ const ProcessTable = () => {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td className="processTable-data">dados de movimentações</td>
-        </tr>
+        <tr>dados</tr>        
       </tbody>
     </table>
   );
