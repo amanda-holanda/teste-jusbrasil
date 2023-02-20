@@ -15,7 +15,7 @@ const Home = () => {
 
   const filterData = (data, tribunalOrigin, processNumber) => {
     console.log(data, tribunalOrigin, processNumber);
-    const dataFiltred = data.data.filter(
+    const dataFiltred = data.filter(
       (item) => item.tribunal === tribunalOrigin || item.cnj === processNumber
     );
     console.log("os dados filtrados: ", dataFiltred);

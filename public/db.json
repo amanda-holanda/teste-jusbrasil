@@ -1,70 +1,68 @@
-{
-  "data": [
-    {
-      "id": 1,
-      "cnj": "5001682-88.2020.8.13.0671",
-      "nome das partes": "Amanda",
-      "tribunal": "TJSP",
-      "date": "18.05.2022",
-      "movimentacao": {
-        "date": "15.02.2023",
-        "descricao": "aconteceu isso"
-      }
-    },
-    {
-      "id": 2,
-      "cnj": "5001682-88.2020.8.13.0672",
-      "nome das partes": "Bruna",
-      "tribunal": "TJSP",
-      "date": "19.05.2022",
-      "movimentacao": {
-        "date": "12.02.2023",
-        "descricao": "aconteceu nada"
-      }
-    },
-    {
-      "id": 3,
-      "cnj": "5001682-88.2020.8.13.0673",
-      "nome das partes": "Carla",
-      "tribunal": "TJCE",
-      "date": "19.06.2022",
-      "movimentacao": {
-        "date": "13.03.2023",
-        "descricao": "processo anulado"
-      }     
-    },
-    {
-      "id": 4,
-      "cnj": "5001682-88.2020.8.13.0674",
-      "nome das partes": "Dalila",
-      "tribunal": "TJPI",
-      "date": "09.05.2022",
-      "movimentacao": {
-        "date": "10.03.2023",
-        "descricao": "processo anulado"
-       }
-    },
-    {
-      "id": 5,
-      "cnj": "5001682-88.2020.8.13.0675",
-      "nome das partes": "Eliane",
-      "tribunal": "TJPI",
-      "date": "07.07.2022",
-      "movimentacao": {
-        "date": "07.01.2023",
-        "descricao": "processo anulado"
-      }
-    },
-    {
-      "id": 6,
-      "cnj": "5001682-88.2020.8.13.0676",
-      "nome das partes": "Fátima",
-      "tribunal": "TJCE",
-      "date": "10.01.2020",
-      "movimentacao": {
-        "date": "10.01.2023",
-        "descricao": "processo anulado"
-      }     
+[
+  {
+    "id": 1,
+    "cnj": "5001682-88.2020.8.13.0671",
+    "nome das partes": "Amanda",
+    "tribunal": "TJSP",
+    "date": "18.05.2022",
+    "movimentacao": {
+      "date": "15.02.2023",
+      "descricao": "aconteceu isso"
     }
-  ]
-}
+  },
+  {
+    "id": 2,
+    "cnj": "5001682-88.2020.8.13.0672",
+    "nome das partes": "Bruna",
+    "tribunal": "TJSP",
+    "date": "19.05.2022",
+    "movimentacao": {
+      "date": "12.02.2023",
+      "descricao": "aconteceu nada"
+    }
+  },
+  {
+    "id": 3,
+    "cnj": "5001682-88.2020.8.13.0673",
+    "nome das partes": "Carla",
+    "tribunal": "TJCE",
+    "date": "19.06.2022",
+    "movimentacao": {
+      "date": "13.03.2023",
+      "descricao": "processo anulado"
+    }
+  },
+  {
+    "id": 4,
+    "cnj": "5001682-88.2020.8.13.0674",
+    "nome das partes": "Dalila",
+    "tribunal": "TJPI",
+    "date": "09.05.2022",
+    "movimentacao": {
+      "date": "10.03.2023",
+      "descricao": "processo anulado"
+    }
+  },
+  {
+    "id": 5,
+    "cnj": "5001682-88.2020.8.13.0675",
+    "nome das partes": "Eliane",
+    "tribunal": "TJPI",
+    "date": "07.07.2022",
+    "movimentacao": {
+      "date": "07.01.2023",
+      "descricao": "processo anulado"
+    }
+  },
+  {
+    "id": 6,
+    "cnj": "5001682-88.2020.8.13.0676",
+    "nome das partes": "Fátima",
+    "tribunal": "TJCE",
+    "date": "10.01.2020",
+    "movimentacao": {
+      "date": "10.01.2023",
+      "descricao": "processo anulado"
+    }
+  }
+]
