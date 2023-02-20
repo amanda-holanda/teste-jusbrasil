@@ -8,10 +8,9 @@
 6. escolha: fazer com que minha API entregue os dados de um arquivo JSON já populado na pasta do projeto.=> npm install json-server => ajuste script "server" no package.json => criação da data/db.json
 7. lógica: 
 [X] - popular o db
-[] - filtrar de acordo com o input() fazer lógica de verificar se o numero do input é igual ao do db
-[] - fazer o fetch
-[] - filtrar os dados filtrados
-[] - printar os filtrados na tela
+[X] - fazer o fetch
+[X] - filtro: filtrar de acordo com o input - lógica de verificar se o valor do input é igual ao do db
+[X] - printar os filtrados na tela
 
 a) escolha da componetização do campo de busca, da listagem dos processos e do processo.
 

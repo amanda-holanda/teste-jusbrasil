@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Search from "../components/search/Search";
+import SearchProcess from "../components/searchProcess/SearchProcess";
 import ProcessList from "../components/processList/ProcessList";
 
 const API = "Http://localhost:3000/";
@@ -14,17 +14,15 @@ const Home = () => {
   };
 
   const filterData = (data, tribunalOrigin, processNumber) => {
-    console.log(data, tribunalOrigin, processNumber);
     const dataFiltred = data.filter(
       (item) => item.tribunal === tribunalOrigin || item.cnj === processNumber
     );
-    console.log("os dados filtrados: ", dataFiltred);
     setGetDataFiltred(dataFiltred);
   };
 
   return (
     <>
-      <Search onSearch={loadData} />
+      <SearchProcess onSearch={loadData} />
       <ProcessList list={getDataFiltred} />
     </>
   );

@@ -1,7 +1,7 @@
-import "./Search.css";
+import "./SearchProcess.css";
 import { useState } from "react";
 
-function Search(props) {
+function SearchProcess(props) {
   const [tribunalOrigin, setTribunalOrigin] = useState("");
   const [processNumber, setProcessNumber] = useState("");
 
@@ -44,4 +44,4 @@ function Search(props) {
   );
 }
 
-export default Search;
+export default SearchProcess;
