@@ -9,13 +9,13 @@ const Home = () => {
 
   const loadData = async (tribunalOrigin, processNumber) => {
     const res = await fetch(API + "db.json");
-    const dataLoaded = await res.json();
-    filterData(dataLoaded, tribunalOrigin, processNumber);
+    const data = await res.json();
+    filterData(data, tribunalOrigin, processNumber);
   };
 
-  const filterData = (dataLoaded, tribunalOrigin, processNumber) => {
-    console.log(dataLoaded, tribunalOrigin, processNumber);
-    const dataFiltred = dataLoaded.data.filter(
+  const filterData = (data, tribunalOrigin, processNumber) => {
+    console.log(data, tribunalOrigin, processNumber);
+    const dataFiltred = data.data.filter(
       (item) => item.tribunal === tribunalOrigin || item.cnj === processNumber
     );
     console.log("os dados filtrados: ", dataFiltred);
