@@ -21,7 +21,7 @@ function Search(props) {
         <label htmlFor="tribunal">
           <select
             name="tribunal"
-            onChange={(e) => setTribunalOrigin(e.target.value)}            
+            onChange={(e) => setTribunalOrigin(e.target.value)}
           >
             <option value="">Selecione o tribunal</option>
             <option value="TJSP">TJSP</option>
@@ -31,11 +31,11 @@ function Search(props) {
         </label>
         <label htmlFor="numeroProcesso">
           <input
-            type="number"
+            type="text"
             name="numeroProcesso"
             placeholder="Número do processo"
             onChange={(e) => setProcessNumber(e.target.value)}
-            value={processNumber}            
+            value={processNumber}
           />
         </label>
         <button type="submit">Buscar</button>
