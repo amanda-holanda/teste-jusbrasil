@@ -12,14 +12,14 @@ function SearchProcess(props) {
 
   return (
     <section className="searchContainer">
-      <h1 className="searchTitle">Buscar</h1>
+      <h1 className="searchTitle">Consulta Processual</h1>
       <p className="searchParagraph">
         Selecione um tribunal para listar os processos ou buscar pelo número
         unificado
       </p>
       <form onSubmit={handleSubmit} className="searchForm">
-        <label htmlFor="tribunal">
-          <select
+        <label className="labelSearch" htmlFor="tribunal">
+          <select className="selectionSearch"
             name="tribunal"
             onChange={(e) => setTribunalOrigin(e.target.value)}
           >
@@ -29,8 +29,8 @@ function SearchProcess(props) {
             <option value="TJPI">TJPI</option>
           </select>
         </label>
-        <label htmlFor="numeroProcesso">
-          <input
+        <label className="labelSearch" htmlFor="numeroProcesso">
+          <input className="selectionSearch"
             type="text"
             name="numeroProcesso"
             placeholder="Número do processo"
@@ -38,7 +38,7 @@ function SearchProcess(props) {
             value={processNumber}
           />
         </label>
-        <button type="submit">Buscar</button>
+        <button className="searchBtn" type="submit">Buscar</button>
       </form>
     </section>
   );
