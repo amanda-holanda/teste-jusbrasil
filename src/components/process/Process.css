@@ -1,0 +1,8 @@
+.displayContainer {
+    width: 80%;
+    background-color: lightgrey;    
+    margin: 10%;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+}
