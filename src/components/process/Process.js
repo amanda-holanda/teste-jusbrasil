@@ -1,15 +1,21 @@
+import ProcessTable from "../processTable/ProcessTable";
 import "./Process.css";
 
-function Process({cnj, tribunal, date, movimentacao}) {
+function Process({ cnj, tribunal, date, movimentacao }) {
   return (
-    <section className="displayContainer">
-      <h2>Processo n. {cnj} do {tribunal}</h2>
-      <p>Distribuído em {date}</p>
-      <div className="movementsContainer">
-        <h4>Movimentações:</h4>
-        <p>{movimentacao.descricao}</p>
-      </div>
-    </section>
+    <>
+      <h2 className="processTitle">
+        Processo n. {cnj} do {tribunal}
+      </h2>
+      <p className="processDate">Distribuído em {date}</p>
+      <section className="processContainer">
+        <ProcessTable />
+        <div className="secondColumn">
+          <p>Detalhes do processo</p>
+          <p>Partes Envolvidas</p>
+        </div>
+      </section>
+    </>
   );
 }
 

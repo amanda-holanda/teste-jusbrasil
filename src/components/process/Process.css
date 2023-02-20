@@ -1,8 +1,24 @@
-.displayContainer {
-    width: 80%;
-    background-color: lightgrey;    
-    margin: 10%;
-    padding: 6%;
-    display: flex;
-    flex-direction: column;
+.processTitle {
+  align-self: center;
+  width: 85vw;
+  font-weight: lighter;
+  margin: 0 0 5px 0;
+}
+
+.processDate {
+  align-self: center;
+  width: 85vw;
+  color: gray;
+  margin: 0 0 20px 0;
+}
+
+.processContainer {
+  width: 85vw;  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2vw;
+}
+
+.secondColumn {
+  border: 1px solid blue;
 }
