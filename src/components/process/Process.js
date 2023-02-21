@@ -1,13 +1,42 @@
 import "./Process.css";
+import MovementProcess from "../movementProcess/MovementProcess";
 
-function Process({cnj, tribunal, date, movimentacao}) {
+function Process({ cnj, partes, tribunal, date, movimentacao }) {
+  console.log("parametro", movimentacao);
   return (
-    <section className="displayContainer">
-      <h2>Processo n. {cnj} do {tribunal}</h2>
-      <p>Distribuído em {date}</p>
-      <div className="movementsContainer">
-        <h4>Movimentações:</h4>
-        <p>{movimentacao.descricao}</p>
+    <section className="processContainer">
+      <h2 className="processTitle">
+        Processo n. {cnj} do {tribunal}
+      </h2>
+      <p className="processDate">Distribuído em {date}</p>
+      <div className="processData">
+        <table className="processTable">
+          <thead>
+            <tr>
+              <th className="processTable-header">Movimentações</th>
+            </tr>
+          </thead>
+          <tbody>
+            {movimentacao.map((item) => {
+              return (
+                <MovementProcess
+                  key={item.id}
+                  date={item.date}
+                  descricao={item.descricao}
+                />
+              );
+            })}
+          </tbody>
+        </table>
+        <section className="processDetails">
+          <ul>
+            <li className="listParts headline">Partes Envolvidas</li>
+            <li className="listParts name">{partes.autor}</li>            
+            <li className="listParts caption">Parte envolvida - autor</li>
+            <li className="listParts name">{partes.reu}</li>
+            <li className="listParts caption">Parte envolvida - réu</li>
+          </ul>
+        </section>
       </div>
     </section>
   );

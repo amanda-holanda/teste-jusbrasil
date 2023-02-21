@@ -5,7 +5,7 @@ import ProcessList from "../components/processList/ProcessList";
 const API = "Http://localhost:3000/";
 
 const Home = () => {
-  const [getDataFiltred, setGetDataFiltred] = useState([]);
+  const [listFiltred, setListFiltred] = useState([]);
 
   const loadData = async (tribunalOrigin, processNumber) => {
     const res = await fetch(API + "db.json");
@@ -17,13 +17,13 @@ const Home = () => {
     const dataFiltred = data.filter(
       (item) => item.tribunal === tribunalOrigin || item.cnj === processNumber
     );
-    setGetDataFiltred(dataFiltred);
+    setListFiltred(dataFiltred);
   };
 
   return (
     <>
       <SearchProcess onSearch={loadData} />
-      <ProcessList list={getDataFiltred} />
+      <ProcessList list={listFiltred} />
     </>
   );
 };
