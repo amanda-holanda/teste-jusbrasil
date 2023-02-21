@@ -4,7 +4,7 @@ import MovementProcess from "../movementProcess/MovementProcess";
 function Process({ cnj, partes, tribunal, date, movimentacao }) {
   console.log("parametro", movimentacao);
   return (
-    <section>
+    <section className="processContainer">
       <h2 className="processTitle">
         Processo n. {cnj} do {tribunal}
       </h2>
