@@ -12,7 +12,7 @@
   margin: 0 0 20px 0;
 }
 
-.processContainer {
+.processData {
   width: 85vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -21,7 +21,7 @@
 
 .processTable {
   border-collapse: collapse;
-  width: 55vw;
+  width: 60vw;
 }
 
 .processTable-header {
@@ -35,6 +35,6 @@
   padding: 12px 20px 12px;
 }
 
-.secondColumn {
-  border: 1px solid blue;
+.processDetails {
+  border: 1px solid gray;
 }

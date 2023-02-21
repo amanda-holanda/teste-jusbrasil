@@ -1,15 +1,15 @@
 import "./Process.css";
 import MovementProcess from "../movementProcess/MovementProcess";
 
-function Process({ cnj, tribunal, date, movimentacao }) {
+function Process({ cnj, partes, tribunal, date, movimentacao }) {
   console.log("parametro", movimentacao);
   return (
-    <>
+    <section>
       <h2 className="processTitle">
         Processo n. {cnj} do {tribunal}
       </h2>
       <p className="processDate">Distribuído em {date}</p>
-      <section className="processContainer">
+      <div className="processData">
         <table className="processTable">
           <thead>
             <tr>
@@ -28,12 +28,17 @@ function Process({ cnj, tribunal, date, movimentacao }) {
             })}
           </tbody>
         </table>
-        <div className="secondColumn">
-          <p>Detalhes do processo</p>
-          <p>Partes Envolvidas</p>
-        </div>
-      </section>
-    </>
+        <section className="processDetails">
+          <ul>
+            <li>Partes Envolvidas</li>
+            <li>{partes.autor}</li>            
+            <li>autor</li>
+            <li>{partes.reu}</li>
+            <li>réu</li>
+          </ul>
+        </section>
+      </div>
+    </section>
   );
 }
 

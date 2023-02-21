@@ -5,6 +5,7 @@ const ProcessList = ({ list }) => {
     <Process
       key={item.id}
       cnj={item.cnj}
+      partes={item.partes}
       tribunal={item.tribunal}
       date={item.date}
       movimentacao={item.movimentacao}
