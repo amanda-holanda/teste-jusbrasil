@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/teste-jusbrasil/static/css/main.be268aee.css",
+    "main.js": "/teste-jusbrasil/static/js/main.b1dee024.js",
+    "index.html": "/teste-jusbrasil/index.html",
+    "main.be268aee.css.map": "/teste-jusbrasil/static/css/main.be268aee.css.map",
+    "main.b1dee024.js.map": "/teste-jusbrasil/static/js/main.b1dee024.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be268aee.css",
+    "static/js/main.b1dee024.js"
+  ]
+}
