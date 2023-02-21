@@ -12,6 +12,14 @@
 [X] - filtro: filtrar de acordo com o input - lógica de verificar se o valor do input é igual ao do db
 [X] - printar os filtrados na tela
 
-a) escolha da componetização do campo de busca, da listagem dos processos e do processo.
+- escolha da componetização do campo de busca, da listagem dos processos e do processo.
 
+8. exibicao
+- criacao dos componentes process e process list para listagem dos processos na exibicao
 
+9. movimentacao
+- criacao do componente movementprocess para listar as movimentacoes
+
+10. layout do campo de exibicao
+
+11. primeiro deploy para verificacao de bugs
