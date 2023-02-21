@@ -23,3 +23,5 @@
 10. layout do campo de exibicao
 
 11. primeiro deploy para verificacao de bugs
+
+Obs: divisão de branchs (pagina de busca+layout, lógica da página de busca e do campo de exibicao, layout do campo de exibica + logica do campo de movimentacao, deploy)
