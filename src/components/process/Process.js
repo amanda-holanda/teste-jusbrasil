@@ -30,11 +30,11 @@ function Process({ cnj, partes, tribunal, date, movimentacao }) {
         </table>
         <section className="processDetails">
           <ul>
-            <li>Partes Envolvidas</li>
-            <li>{partes.autor}</li>            
-            <li>autor</li>
-            <li>{partes.reu}</li>
-            <li>réu</li>
+            <li className="listParts headline">Partes Envolvidas</li>
+            <li className="listParts name">{partes.autor}</li>            
+            <li className="listParts caption">Parte envolvida - autor</li>
+            <li className="listParts name">{partes.reu}</li>
+            <li className="listParts caption">Parte envolvida - réu</li>
           </ul>
         </section>
       </div>

@@ -21,7 +21,7 @@
 
 .processTable {
   border-collapse: collapse;
-  width: 60vw;
+  width: 65vw;
 }
 
 .processTable-header {
@@ -35,6 +35,24 @@
   padding: 12px 20px 12px;
 }
 
-.processDetails {
-  border: 1px solid gray;
+.listParts {
+  list-style-type: none;
+  margin: 12px 12px 0px 12px;
+  
+}
+
+.headline {
+  font-weight: bold;  
+  margin-bottom: 25px; 
+}
+
+.name {
+  color: blue;
+  font-size: 0.9em;
+}
+
+.caption {
+  color: gray;
+  font-size: 0.8em;
+  margin-top: 0px;
 }
