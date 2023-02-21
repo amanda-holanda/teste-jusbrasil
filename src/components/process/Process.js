@@ -1,33 +1,33 @@
-import { useState } from "react";
-import ProcessTable from "../processTable/ProcessTable";
 import "./Process.css";
+import MovementProcess from "../movementProcess/MovementProcess";
 
-function Process({ cnj, tribunal, date, movimentacao}) {
-
-  const [listMovements, setListMovements] = useState([])
-
-  function handleListMovimentacao() {
-    const listMovimentacao = movimentacao.map((value) => {
-      return (
-        <tr key={value.id}>
-          <td>{value.date}</td>
-          <td>{value.descricao}</td>
-        </tr>
-      );
-    });
-    console.log(listMovimentacao)
-    setListMovements(listMovimentacao)
-  }
-  handleListMovimentacao();
-
-  return (
+function Process({ cnj, tribunal, date, movimentacao }) {
+  console.log("parametro", movimentacao);
+    return (
     <>
       <h2 className="processTitle">
         Processo n. {cnj} do {tribunal}
       </h2>
       <p className="processDate">Distribuído em {date}</p>
-      <section className="processContainer">      
-        <ProcessTable onList={listMovements}/>
+      <section className="processContainer">
+        <table className="processTable">
+          <thead>
+            <tr>
+              <th className="processTable-header">Movimentações</th>
+            </tr>
+          </thead>
+          <tbody>
+            {movimentacao.map((item) => {
+              return (
+                <MovementProcess
+                key={item.id}
+                date={item.date}
+                descricao={item.descricao}
+              />
+              )
+            })}
+          </tbody>
+        </table>
         <div className="secondColumn">
           <p>Detalhes do processo</p>
           <p>Partes Envolvidas</p>

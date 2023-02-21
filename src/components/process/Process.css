@@ -19,6 +19,22 @@
   column-gap: 2vw;
 }
 
+.processTable {
+  border-collapse: collapse;
+  width: 55vw;
+}
+
+.processTable-header {
+    background-color: lightgray;
+}
+
+.processTable-header,
+.processTable-data {
+  border: 1px solid gray;
+  text-align: left;
+  padding: 8px;
+}
+
 .secondColumn {
   border: 1px solid blue;
 }

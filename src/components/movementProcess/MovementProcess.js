@@ -1,13 +1,12 @@
-/*const MovementProcess = ({movimentacao}) => {
-  return movimentacao.map((value) => {
-    return (
-      <tr key={value.id}>
-        <td>{value.date}</td>
-        <td>{value.descricao}</td>
-      </tr>
-    );
-  });
+import "./MovementProcess.css"
+
+const MovementProcess = ({ date, descricao }) => {  
+  return (
+    <tr>
+      <td className="processTable-data">{date}</td>
+      <td className="processTable-data">{descricao}</td>
+    </tr>
+  );
 };
 
 export default MovementProcess;
-*/
