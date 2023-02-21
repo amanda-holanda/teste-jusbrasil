@@ -13,7 +13,7 @@
 }
 
 .processContainer {
-  width: 85vw;  
+  width: 85vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2vw;
@@ -25,14 +25,14 @@
 }
 
 .processTable-header {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 .processTable-header,
 .processTable-data {
   border: 1px solid gray;
   text-align: left;
-  padding: 8px;
+  padding: 12px 20px 12px;
 }
 
 .secondColumn {

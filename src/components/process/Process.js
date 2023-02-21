@@ -3,7 +3,7 @@ import MovementProcess from "../movementProcess/MovementProcess";
 
 function Process({ cnj, tribunal, date, movimentacao }) {
   console.log("parametro", movimentacao);
-    return (
+  return (
     <>
       <h2 className="processTitle">
         Processo n. {cnj} do {tribunal}
@@ -20,11 +20,11 @@ function Process({ cnj, tribunal, date, movimentacao }) {
             {movimentacao.map((item) => {
               return (
                 <MovementProcess
-                key={item.id}
-                date={item.date}
-                descricao={item.descricao}
-              />
-              )
+                  key={item.id}
+                  date={item.date}
+                  descricao={item.descricao}
+                />
+              );
             })}
           </tbody>
         </table>
