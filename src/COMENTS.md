@@ -17,11 +17,24 @@
 8. exibicao
 - criacao dos componentes process e process list para listagem dos processos na exibicao
 
-9. movimentacao
+10. layout do campo de exibicao
+10.1 movimentacao
 - criacao do componente movementprocess para listar as movimentacoes
 
-10. layout do campo de exibicao
-
 11. primeiro deploy para verificacao de bugs
+- bug no link da api
+
+12. refatoração (branch: refactoring)
+- debug URL json
+- isolar funções: filter, fetch
+- apagar app.teste.js
+- apagar logo react e subsituir o favicon
+- colocar favicon jusbrasil
+- retirada console.log
+- mudança do nome do componente movementprocess para processMovements
+- mudança do nome do componete searchprocess para ProcessSearch
+- retirada do campo de busca de tribunal
+- adicionar legenda pro formato NNNNNNN-NN.NNNN.N.NN.NNNN
+
 
 Obs: divisão de branchs (pagina de busca+layout, lógica da página de busca e do campo de exibicao, layout do campo de exibica + logica do campo de movimentacao, deploy)
