@@ -1,5 +1,5 @@
 import "./Process.css";
-import MovementProcess from "../movementProcess/MovementProcess";
+import ProcessMovements from "../processMovements/ProcessMovements";
 
 function Process({ cnj, partes, tribunal, date, movimentacao }) {
   return (
@@ -18,7 +18,7 @@ function Process({ cnj, partes, tribunal, date, movimentacao }) {
           <tbody>
             {movimentacao.map((item) => {
               return (
-                <MovementProcess
+                <ProcessMovements
                   key={item.id}
                   date={item.date}
                   descricao={item.descricao}

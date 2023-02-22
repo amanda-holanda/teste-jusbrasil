@@ -1,6 +1,6 @@
-import "./MovementProcess.css";
+import "./ProcessMovements.css";
 
-const MovementProcess = ({ date, descricao }) => {
+const processMovements = ({ date, descricao }) => {
   return (
     <>
       <tr>
@@ -13,4 +13,4 @@ const MovementProcess = ({ date, descricao }) => {
   );
 };
 
-export default MovementProcess;
+export default processMovements;
