@@ -2,12 +2,11 @@ import "./ProcessSearch.css";
 import { useState } from "react";
 
 function ProcessSearch(props) {
-  const [tribunalOrigin, setTribunalOrigin] = useState("");
   const [processNumber, setProcessNumber] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.onSearch(tribunalOrigin, processNumber);
+    props.onSearch(processNumber);
   };
 
   return (
@@ -18,19 +17,9 @@ function ProcessSearch(props) {
         unificado
       </p>
       <form onSubmit={handleSubmit} className="searchForm">
-        <label className="labelSearch" htmlFor="tribunal">
-          <select className="selectionSearch"
-            name="tribunal"
-            onChange={(e) => setTribunalOrigin(e.target.value)}
-          >
-            <option value="">Selecione o tribunal</option>
-            <option value="TJSP">TJSP</option>
-            <option value="TJCE">TJCE</option>
-            <option value="TJPI">TJPI</option>
-          </select>
-        </label>
         <label className="labelSearch" htmlFor="numeroProcesso">
-          <input className="selectionSearch"
+          <input
+            className="inputSearch"
             type="text"
             name="numeroProcesso"
             placeholder="Número do processo"
@@ -38,7 +27,9 @@ function ProcessSearch(props) {
             value={processNumber}
           />
         </label>
-        <button className="searchBtn" type="submit">Buscar</button>
+        <button className="searchBtn" type="submit">
+          Buscar
+        </button>
       </form>
     </section>
   );

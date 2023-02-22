@@ -7,9 +7,9 @@ import { fetchData } from "../services/fetchData";
 const Home = () => {
   const [listFiltred, setListFiltred] = useState([]);
 
-  const loadData = async (tribunalOrigin, processNumber) => {
+  const loadData = async (processNumber) => {
     const data = await fetchData("/db.json");
-    const dataFiltred = filterData(data, tribunalOrigin, processNumber);
+    const dataFiltred = filterData(data, processNumber);
     setListFiltred(dataFiltred);
   };
 

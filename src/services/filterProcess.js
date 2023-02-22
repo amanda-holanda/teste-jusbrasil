@@ -1,4 +1,4 @@
-export const filterData = (data, tribunalOrigin, processNumber) =>
+export const filterData = (data, processNumber) =>
   data.filter(
-    (item) => item.tribunal === tribunalOrigin || item.cnj === processNumber
+    (item) => item.cnj === processNumber
   );
