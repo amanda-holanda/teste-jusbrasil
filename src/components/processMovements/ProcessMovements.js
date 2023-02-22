@@ -4,7 +4,7 @@ const processMovements = ({ date, descricao }) => {
   return (
     <tr>
       <td className="processTable-data">
-        <p className="dateMovement">{date}</p>
+        <p className="movementsDate">{date}</p>
         <p>{descricao}</p>
       </td>
     </tr>
