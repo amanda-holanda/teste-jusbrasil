@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/teste-jusbrasil/static/css/main.be268aee.css",
-    "main.js": "/teste-jusbrasil/static/js/main.b1dee024.js",
+    "main.css": "/teste-jusbrasil/static/css/main.fa5d6e59.css",
+    "main.js": "/teste-jusbrasil/static/js/main.204b7d42.js",
     "index.html": "/teste-jusbrasil/index.html",
-    "main.be268aee.css.map": "/teste-jusbrasil/static/css/main.be268aee.css.map",
-    "main.b1dee024.js.map": "/teste-jusbrasil/static/js/main.b1dee024.js.map"
+    "main.fa5d6e59.css.map": "/teste-jusbrasil/static/css/main.fa5d6e59.css.map",
+    "main.204b7d42.js.map": "/teste-jusbrasil/static/js/main.204b7d42.js.map"
   },
   "entrypoints": [
-    "static/css/main.be268aee.css",
-    "static/js/main.b1dee024.js"
+    "static/css/main.fa5d6e59.css",
+    "static/js/main.204b7d42.js"
   ]
 }
