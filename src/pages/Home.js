@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SearchProcess from "../components/searchProcess/SearchProcess";
+import ProcessSearch from "../components/processSearch/ProcessSearch";
 import ProcessList from "../components/processList/ProcessList";
 import { filterData } from "../services/filterProcess";
 import { fetchData } from "../services/fetchData";
@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <>
-      <SearchProcess onSearch={loadData} />
+      <ProcessSearch onSearch={loadData} />
       <ProcessList list={listFiltred} />
     </>
   );
