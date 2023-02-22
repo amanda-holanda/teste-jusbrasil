@@ -34,12 +34,13 @@
 .inputSearch {
   border: 1px solid gray;
   height: 100%;
-  width: 17vw;
+  width: 20vw;
   margin: 0 1vw 0 0;
   font-size: 1em;
   padding: 0 0 0 3%;
   background-color: white;
   border-radius: 5px;
+  color: rgb(134, 132, 132);
 }
 
 .searchBtn {

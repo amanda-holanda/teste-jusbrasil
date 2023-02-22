@@ -13,8 +13,7 @@ function ProcessSearch(props) {
     <section className="searchContainer">
       <h1 className="searchTitle">Consulta Processual</h1>
       <p className="searchParagraph">
-        Selecione um tribunal para listar os processos ou buscar pelo número
-        unificado
+        Consultar processos por número em um clique
       </p>
       <form onSubmit={handleSubmit} className="searchForm">
         <label className="labelSearch" htmlFor="numeroProcesso">
@@ -22,7 +21,7 @@ function ProcessSearch(props) {
             className="inputSearch"
             type="text"
             name="numeroProcesso"
-            placeholder="Número do processo"
+            placeholder="1234567-88.2020.8.10.1234"
             onChange={(e) => setProcessNumber(e.target.value)}
             value={processNumber}
           />
