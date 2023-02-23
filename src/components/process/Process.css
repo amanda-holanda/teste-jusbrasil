@@ -1,5 +1,5 @@
 .processContainer {
-  margin: 1% 0 2%;  
+  margin: 1% 0 2%;
 }
 
 .processTitle {
@@ -19,7 +19,8 @@
 .processData {
   width: 85vw;
   display: grid;
-  grid-template-columns: 1fr;  
+  grid-template-columns: 1fr;
+  border: 1px solid red;
 }
 
 .processTable {
@@ -38,19 +39,19 @@
   padding: 12px 20px 12px;
 }
 
-.processDetails{
+.processDetails {
   margin: 1% 0 5%;
+  border: 1px solid green;
 }
 
 .listParts {
   list-style-type: none;
   margin: 12px 12px 0px 12px;
-  
 }
 
 .headline {
-  font-weight: bold;  
-  margin-bottom: 25px; 
+  font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .name {
@@ -64,10 +65,13 @@
   margin-top: 0px;
 }
 
-@media screen and(min-width: 768px) {
-  .processData {   
+@media screen and (min-width: 768px) {
+  .processData {
     grid-template-columns: 1fr 1fr;
     column-gap: 2vw;
   }
-  
+
+  .processTable {    
+    width: 60vw;
+  }  
 }
