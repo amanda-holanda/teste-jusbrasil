@@ -5,21 +5,19 @@ import { useState } from "react";
 
 export const Display = () => {
   const [listFiltred, setListFiltred] = useState([]);
+  const urlParameter = window.location.search;
+  const searchParams = new URLSearchParams(urlParameter);
+  const processNumber = searchParams.get("numeroProcesso");
 
-  let search = window.location.search;
-  const paramsString = search;
-  const searchParam = new URLSearchParams(paramsString);
-  const param = searchParam.get("numeroProcesso");
-  
-  const loadData = async (param) => {
+  const loadData = async (processNumber) => {
     const data = await fetchData("db.json");
-    const dataFiltred = filterData(data, param);
+    const dataFiltred = filterData(data, processNumber);
     setListFiltred(dataFiltred);
   };
 
   return (
-    <>      
-      <ProcessList onDisplay={loadData(param)} list={listFiltred} />
+    <>
+      <ProcessList onDisplay={loadData(processNumber)} list={listFiltred} />
     </>
   );
 };
