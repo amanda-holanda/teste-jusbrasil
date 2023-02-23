@@ -39,5 +39,14 @@
 14. responsividade:
 -construção mobile first
 
+15. refatoracao das paginas (branch: refactoringPages)
+- tive que refatorar o código, pois havia criado só uma página utilizando SPA.
+- adicionei na pasta pages a página de display 
+- transformei o formulario em simples no Home e apaguei o component searchProcess
+- criei o componente SearchForm que contem o formulario do home
+- decidi enviar o dado do input do formulario por URL 
+- Lógica na página de display: captei esse dado na página de display utilizando o 'window.location.search' e 'URLSearchParams'. depois passei como parametro na funcao loadData e chamei a loadData no componente ProcessList
+- criei um link para retornar à página principal no formato de um botão. Gostaria de ter colocado um header com um campo de pesquisa na página de display, mas não havia tempo, já que tiver que fazer essa refatoração um dia antes da entrega.
+
 
 Obs: divisão de branchs (pagina de busca+layout, lógica da página de busca e do campo de exibicao, layout do campo de exibica + logica do campo de movimentacao, deploy)
