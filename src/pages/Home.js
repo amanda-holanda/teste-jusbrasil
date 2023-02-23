@@ -1,23 +1,26 @@
-import { useState } from "react";
-import ProcessSearch from "../components/processSearch/ProcessSearch";
-import ProcessList from "../components/processList/ProcessList";
-import { filterData } from "../services/filterProcess";
-import { fetchData } from "../services/fetchData";
+import "./Home.css";
 
 const Home = () => {
-  const [listFiltred, setListFiltred] = useState([]);
-
-  const loadData = async (processNumber) => {
-    const data = await fetchData("teste-jusbrasil/db.json");
-    const dataFiltred = filterData(data, processNumber);
-    setListFiltred(dataFiltred);
-  };
-
   return (
-    <>
-      <ProcessSearch onSearch={loadData} />
-      <ProcessList list={listFiltred} />
-    </>
+    <section className="searchContainer">
+      <h1 className="searchTitle">Consulta Processual</h1>
+      <p className="searchParagraph">
+        Consultar processos por número em um clique
+      </p>
+      <form action="/display" className="searchForm">
+        <label className="labelSearch" htmlFor="numeroProcesso">
+          <input
+            className="inputSearch"
+            type="text"
+            name="numeroProcesso"
+            placeholder="1234567-88.2020.8.10.1234"
+          />
+        </label>
+        <button className="searchBtn" type="submit">
+          Buscar
+        </button>
+      </form>
+    </section>
   );
 };
 

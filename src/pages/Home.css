@@ -4,7 +4,7 @@
   padding: 5% 5% 5%;
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   justify-content: center;
   height: 30vh;
   width: 85vw;
@@ -25,21 +25,21 @@
 .searchForm {
   display: flex;
   justify-content: center;
-  align-items: center;  
-  margin: 2% 0 1%;  
+  align-items: center;
+  margin: 2% 0 1%;
   width: 100%;
   flex-direction: column;
 }
 
-.labelSearch {  
-  display: flex;  
-  justify-content: center;  
+.labelSearch {
+  display: flex;
+  justify-content: center;
 }
 
 .inputSearch {
   border: 1px solid gray;
   height: 6vh;
-  max-width: 60vw;  
+  max-width: 60vw;
   font-size: 1em;
   padding: 0 0 0 3%;
   background-color: white;
@@ -70,11 +70,11 @@
   .searchForm {
     flex-direction: row;
     gap: 2vw;
-    margin: 1% 0 1%;  
+    margin: 1% 0 1%;
   }
 
   .searchBtn {
     margin: 0;
-    width: 120px;    
+    width: 120px;
   }
 }
