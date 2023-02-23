@@ -1,7 +1,7 @@
 import "./Home.css";
 
 const Home = () => {
-  return (
+    return (
     <section className="searchContainer">
       <h1 className="searchTitle">Consulta Processual</h1>
       <p className="searchParagraph">
@@ -13,7 +13,7 @@ const Home = () => {
             className="inputSearch"
             type="text"
             name="numeroProcesso"
-            placeholder="1234567-88.2020.8.10.1234"
+            placeholder="1234567-88.2020.8.10.1234"            
           />
         </label>
         <button className="searchBtn" type="submit">
