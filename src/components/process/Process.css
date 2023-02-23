@@ -19,8 +19,7 @@
 .processData {
   width: 85vw;
   display: grid;
-  grid-template-columns: 1fr;
-  border: 1px solid red;
+  grid-template-columns: 1fr;  
 }
 
 .processTable {
@@ -40,8 +39,7 @@
 }
 
 .processDetails {
-  margin: 1% 0 5%;
-  border: 1px solid green;
+  margin: 1% 0 5%;  
 }
 
 .listParts {

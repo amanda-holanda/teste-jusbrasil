@@ -4,8 +4,7 @@
   padding: 5% 5% 5%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  overflow: hidden;
+  align-items: center;  
   justify-content: center;
   height: 30vh;
   width: 85vw;
@@ -26,29 +25,27 @@
 .searchForm {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 40%;
+  align-items: center;  
   margin: 2% 0 1%;  
   width: 100%;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
-.labelSearch {
-  height: 6vh;  
-  width: 100%;
+.labelSearch {  
   display: flex;  
-  justify-content: center;
+  justify-content: center;  
 }
 
 .inputSearch {
   border: 1px solid gray;
-  height: 100%;
-  width: 60vw;  
+  height: 6vh;
+  max-width: 60vw;  
   font-size: 1em;
   padding: 0 0 0 3%;
   background-color: white;
   border-radius: 5px;
   color: rgb(134, 132, 132);
+  align-self: center;
 }
 
 .searchBtn {
@@ -69,28 +66,14 @@
   opacity: 0.5;
 }
 
-/*@media screen and (max-width: 768px) {
-  .searchTitle {
-    font-size: 1.6em;
-  }
-
-  .searchParagraph {
-    margin: 0 0 2%;
-    text-align: center;
-    font-size: 0.9em;
+@media screen and (min-width: 768px) {
+  .searchForm {
+    flex-direction: row;
+    gap: 2vw;
   }
 
   .searchBtn {
-    width: 20vw;
-    font-size: 0.8em;
+    margin: 0;
+    width: 120px;    
   }
-
-  .selectionSearch {
-    width: 30vw;
-    font-size: 0.7em;
-  }
-
-  .searchForm {
-    height: 4vh;
-  }
-}*/
+}
