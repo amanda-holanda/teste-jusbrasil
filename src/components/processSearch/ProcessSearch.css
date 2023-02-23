@@ -70,6 +70,7 @@
   .searchForm {
     flex-direction: row;
     gap: 2vw;
+    margin: 1% 0 1%;  
   }
 
   .searchBtn {
