@@ -10,13 +10,16 @@ export const Display = () => {
   const paramsString = search;
   const searchParam = new URLSearchParams(paramsString);
   const param = searchParam.get("numeroProcesso");
-
-   
+  
   const loadData = async (param) => {
     const data = await fetchData("db.json");
     const dataFiltred = filterData(data, param);
     setListFiltred(dataFiltred);
   };
 
-  return <ProcessList list={listFiltred} />
+  return (
+    <>      
+      <ProcessList onDisplay={loadData(param)} list={listFiltred} />
+    </>
+  );
 };
