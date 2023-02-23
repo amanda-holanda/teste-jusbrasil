@@ -36,5 +36,8 @@
 - retirada do campo de busca de tribunal
 - adicionar legenda pro formato NNNNNNN-NN.NNNN.N.NN.NNNN
 
+14. responsividade:
+-construção mobile first
+
 
 Obs: divisão de branchs (pagina de busca+layout, lógica da página de busca e do campo de exibicao, layout do campo de exibica + logica do campo de movimentacao, deploy)

@@ -8,7 +8,7 @@ const Home = () => {
   const [listFiltred, setListFiltred] = useState([]);
 
   const loadData = async (processNumber) => {
-    const data = await fetchData("/db.json");
+    const data = await fetchData("teste-jusbrasil/db.json");
     const dataFiltred = filterData(data, processNumber);
     setListFiltred(dataFiltred);
   };

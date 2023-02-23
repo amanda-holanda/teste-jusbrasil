@@ -19,13 +19,12 @@
 .processData {
   width: 85vw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 2vw;
+  grid-template-columns: 1fr;  
 }
 
 .processTable {
   border-collapse: collapse;
-  width: 65vw;
+  width: 100%;
 }
 
 .processTable-header {
@@ -39,15 +38,18 @@
   padding: 12px 20px 12px;
 }
 
+.processDetails {
+  margin: 1% 0 5%;  
+}
+
 .listParts {
   list-style-type: none;
   margin: 12px 12px 0px 12px;
-  
 }
 
 .headline {
-  font-weight: bold;  
-  margin-bottom: 25px; 
+  font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .name {
@@ -59,4 +61,15 @@
   color: gray;
   font-size: 0.8em;
   margin-top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .processData {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4vw;
+  }
+
+  .processTable {    
+    width: 60vw;
+  }  
 }
