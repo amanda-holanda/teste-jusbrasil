@@ -1,3 +1,5 @@
+import "./SearchForm.css";
+
 export const SearchForm = () => {
   return (
     <section className="searchContainer">
