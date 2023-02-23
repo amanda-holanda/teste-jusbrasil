@@ -1,24 +1,7 @@
-import { useState } from "react";
-import ProcessSearch from "../components/processSearch/ProcessSearch";
-import ProcessList from "../components/processList/ProcessList";
-import { filterData } from "../services/filterProcess";
-import { fetchData } from "../services/fetchData";
+import { SearchForm } from "../components/searchForm/SearchForm";
 
 const Home = () => {
-  const [listFiltred, setListFiltred] = useState([]);
-
-  const loadData = async (processNumber) => {
-    const data = await fetchData("teste-jusbrasil/db.json");
-    const dataFiltred = filterData(data, processNumber);
-    setListFiltred(dataFiltred);
-  };
-
-  return (
-    <>
-      <ProcessSearch onSearch={loadData} />
-      <ProcessList list={listFiltred} />
-    </>
-  );
+  return <SearchForm />;
 };
 
 export default Home;
