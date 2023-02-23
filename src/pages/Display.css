@@ -1,0 +1,13 @@
+.returnButton {
+  border: 1px solid;
+  height: 6vh;
+  font-weight: bolder;
+  text-transform: uppercase;
+  background: rgb(46, 45, 45);
+  color: white;
+  width: 120px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 0;
+  margin: 2% 0 0;
+}
