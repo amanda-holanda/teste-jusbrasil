@@ -8,7 +8,7 @@ export const Display = () => {
   const urlParameter = window.location.search;
   const searchParams = new URLSearchParams(urlParameter);
   const processNumber = searchParams.get("numeroProcesso");
-
+  
   const loadData = async (processNumber) => {
     const data = await fetchData("db.json");
     const dataFiltred = filterData(data, processNumber);
@@ -16,7 +16,7 @@ export const Display = () => {
   };
 
   return (
-    <>
+    <>      
       <ProcessList onDisplay={loadData(processNumber)} list={listFiltred} />
     </>
   );
