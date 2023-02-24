@@ -22,22 +22,6 @@
   grid-template-columns: 1fr;  
 }
 
-.processTable {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.processTable-header {
-  background-color: lightgray;
-}
-
-.processTable-header,
-.processTable-data {
-  border: 1px solid gray;
-  text-align: left;
-  padding: 12px 20px 12px;
-}
-
 .processDetails {
   margin: 1% 0 5%;  
 }
