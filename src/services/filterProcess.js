@@ -1,4 +1,4 @@
 export const filterData = (data, processNumber) =>
-  data.filter(
+  data.find(
     (item) => item.cnj === processNumber
   );

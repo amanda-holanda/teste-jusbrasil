@@ -4,12 +4,14 @@ import userEvent from "@testing-library/user-event";
 
 describe("<InputForm />", () => {
   it("Renderiza um campo de texto que pode ser preenchido", () => {
-    render(<InputForm type="text" placeholder="1234567-88.2020.8.10.1234" />);
+    render(<InputForm />);
 
     const input = screen.getByPlaceholderText("1234567-88.2020.8.10.1234");
     expect(input).toBeInTheDocument();
 
-    userEvent.type(input, "CNJ digitado pelo usuário");
-    expect(input).toHaveValue("CNJ digitado pelo usuário");
+    const cnj = "CNJ digitado pelo usuário";
+
+    userEvent.type(input, cnj);
+    expect(input).toHaveValue(cnj);
   });
 });
