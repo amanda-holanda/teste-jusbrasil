@@ -48,5 +48,10 @@
 - Lógica na página de display: captei esse dado na página de display utilizando o 'window.location.search' e 'URLSearchParams'. depois passei como parametro na funcao loadData e chamei a loadData no componente ProcessList
 - criei um link para retornar à página principal no formato de um botão. Gostaria de ter colocado um header com um campo de pesquisa na página de display, mas não havia tempo, já que tiver que fazer essa refatoração um dia antes da entrega.
 
+16. testes unitarios
+- testes: 
+- HOME: SearchForm,inputHome, botãoHome, 
+- DISPLAY: link de voltar, processList, process, processMovements
+
 
 Obs: divisão de branchs (pagina de busca+layout, lógica da página de busca e do campo de exibicao, layout do campo de exibica + logica do campo de movimentacao, deploy)

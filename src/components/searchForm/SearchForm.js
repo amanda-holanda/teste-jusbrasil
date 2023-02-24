@@ -2,12 +2,12 @@ import "./SearchForm.css";
 
 export const SearchForm = () => {
   return (
-    <section className="searchContainer">
+    <form action="/display" className="searchForm">
       <h1 className="searchTitle">Consulta Processual</h1>
       <p className="searchParagraph">
         Consultar processos por número em um clique
       </p>
-      <form action="/display" className="searchForm">
+      <div className="inputButtonContainer">
         <label className="labelSearch" htmlFor="numeroProcesso">
           <input
             className="inputSearch"
@@ -19,7 +19,7 @@ export const SearchForm = () => {
         <button className="searchBtn" type="submit">
           Buscar
         </button>
-      </form>
-    </section>
+      </div>
+    </form>
   );
 };
