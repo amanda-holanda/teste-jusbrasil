@@ -48,15 +48,18 @@
 - Lógica na página de display: captei esse dado na página de display utilizando o 'window.location.search' e 'URLSearchParams'. depois passei como parametro na funcao loadData e chamei a loadData no componente ProcessList
 - criei um link para retornar à página principal no formato de um botão. Gostaria de ter colocado um header com um campo de pesquisa na página de display, mas não havia tempo, já que tiver que fazer essa refatoração um dia antes da entrega.
 
-16. testes unitarios
+16. testes unitarios (branch: tests)
 - testes: 
-- HOME: SearchForm,inputHome, botãoHome, 
+- HOME: SearchForm,inputHome, botãoHome.
 - DISPLAY: link de voltar, processList, process, processMovements
 
 a) refatorei o componente searchForm: antes o formulario estava dentro de uma section chamada searchContainer. decidi colocar tudo dentro da tag form para o codigo ficar mais limpo e eu conseguir importar o componente searchForm para fazer o teste dele.
-b) criei teste do componente searchForm para verificar se renderiza um formulário com os campos necessários (input e botão). para isso criei um mock simulando os dados.
-c) teste inputForm: criei o componente inputForm no searchForm para testar se ele renderiza um campo de texto que pode ser preenchido. Utizei o 'toBeInTheDocument()' para validar se está na tela. Utilizei o 'userEvent.type' para passar o elemento que quero digitar e algum valor de texto e o 'toHaveValue' para me assegurar de que o valor está no input. O objetivo é garantir que, ao digitar qualquer informação, o usuário conseguirá alterar o valor do campo na tela.
-c) teste botão buscar: criei o componente SearchButon no SearchForm para fazer o seu teste.
+
+b) criei teste do componente searchForm para verificar se renderiza um formulário com os campos necessários (input e botão). para isso criei um mock simulando os dados. Utilizei o 'getByPlaceholderText' para procurar o input pelo seu texto de placeholder e o 'getByRole' para procurar o bota por sua role de acessibilidade na tela.
+
+c) teste inputForm: criei o componente inputForm no searchForm. Testei se ele renderiza um campo de texto que pode ser preenchido. Utizei o 'toBeInTheDocument()' para validar se está na tela. Utilizei o 'userEvent.type' para passar o elemento que quero digitar e algum valor de texto e o 'toHaveValue' para me assegurar de que o valor está no input. O objetivo é garantir que, ao digitar qualquer informação, o usuário conseguirá alterar o valor do campo na tela.
+
+d) teste botão buscar: criei o componente SearchButon no SearchForm para fazer o seu teste. Testei se ele renderiza um botão corretamente. Para isso utilizei o 'toBeInTheDocument()' para validar se está na tela. Para deixar registrada a estrutura renderizada do componente, utilizei o 'toMatchSnapshot()'.
 
 
 
