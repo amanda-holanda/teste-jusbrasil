@@ -35,7 +35,8 @@
 
 ## 1. Resumo do projeto
 
-  Desafio técnico proposto pelo Jusbrasil. O objetivo do projeto era construir duas páginas principais: uma para consulta processual e a outra para exibição dos dados da consulta.
+  Desafio técnico proposto pelo Jusbrasil. O objetivo do projeto era construir duas páginas principais: uma página de consulta processual (busca) e
+uma página de processos (exibição).
 
 ## 2. Considerações Técnicas
 
