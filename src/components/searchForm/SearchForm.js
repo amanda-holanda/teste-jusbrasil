@@ -1,5 +1,6 @@
 import "./SearchForm.css";
 import { InputForm } from "./InputForm";
+import { SearchButton } from "./SearchButton";
 
 export const SearchForm = () => {
   return (
@@ -12,9 +13,7 @@ export const SearchForm = () => {
         <label className="labelSearch" htmlFor="numeroProcesso">
           <InputForm />
         </label>
-        <button className="searchBtn" type="submit">
-          Buscar
-        </button>
+        <SearchButton />
       </div>
     </form>
   );

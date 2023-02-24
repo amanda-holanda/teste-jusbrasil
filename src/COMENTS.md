@@ -56,6 +56,7 @@
 a) refatorei o componente searchForm: antes o formulario estava dentro de uma section chamada searchContainer. decidi colocar tudo dentro da tag form para o codigo ficar mais limpo e eu conseguir importar o componente searchForm para fazer o teste dele.
 b) criei teste do componente searchForm para verificar se renderiza um formulário com os campos necessários (input e botão). para isso criei um mock simulando os dados.
 c) teste inputForm: criei o componente inputForm no searchForm para testar se ele renderiza um campo de texto que pode ser preenchido. Utizei o 'toBeInTheDocument()' para validar se está na tela. Utilizei o 'userEvent.type' para passar o elemento que quero digitar e algum valor de texto e o 'toHaveValue' para me assegurar de que o valor está no input. O objetivo é garantir que, ao digitar qualquer informação, o usuário conseguirá alterar o valor do campo na tela.
+c) teste botão buscar: criei o componente SearchButon no SearchForm para fazer o seu teste.
 
 
 
