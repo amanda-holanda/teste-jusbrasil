@@ -36,7 +36,7 @@
 
 ## 2. Considerações Técnicas
 
-  O projeto foi desenvolvido utilizando HTML, CSS, JavaScript e React.JS. O armazenamento de dados foi feito em um arquivo JSON populado na pasta`public/db.json` do projeto.
+  O projeto foi desenvolvido utilizando HTML, CSS, JavaScript e React.JS. O armazenamento de dados foi feito no arquivo `/db.json` populado na pasta `/public` do projeto.
   
 ### 2.1 Planejamento
   Para o planejamento do projeto utilizou-se a ferramenta Projects do GitHub e as Metologias Ágeis.
