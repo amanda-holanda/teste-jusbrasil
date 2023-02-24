@@ -39,13 +39,14 @@
 .inputSearch {
   border: 1px solid gray;
   height: 6vh;
-  width: 60vw;
-  font-size: 1em;
-  padding: 0 0 0 3%;
+  width: 55vw;
+  font-size: 1em;  
   background-color: white;
   border-radius: 5px;
   color: rgb(134, 132, 132);
   align-self: center;
+  max-width: 40vw;
+  text-align: center;
 }
 
 .searchBtn {
@@ -86,6 +87,6 @@
 
 @media screen and (min-width: 1024px) {
   .inputSearch {
-    max-width: 18vw;
+    max-width: 19vw;
   }
 }
