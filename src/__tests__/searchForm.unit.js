@@ -6,8 +6,7 @@ const mockSearchForm = {
     type: "text",
     name: "numeroProcesso",
     label: "numeroProcesso",
-    placeholder: "1234567-88.2020.8.10.1234",
-    validations: "isRequired",
+    placeholder: "1234567-88.2020.8.10.1234",    
   },
   submit: "Buscar",
 };
