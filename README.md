@@ -26,9 +26,8 @@
 
 * [2. Considerações Técnicas](#2-considerações-técnicas)  
   * [2.1 Planejamento](#21-planejamento)
-  * [2.2 Ferramentas utilizadas](#22-ferramentas-utilizadas)
-  * [6.4 Tech Skills](#64-tech-skills)
-  * [2.1 Boilerplate](#61-boilerplate)
+  * [2.2 Ferramentas utilizadas](#22-ferramentas-utilizadas)  
+  * [2.3 Boilerplate](#23-boilerplate)
   
   
 ***
@@ -36,7 +35,7 @@
 
 ## 1. Resumo do projeto
 
-  Desafio técnico proposto pela Jusbrasil. O objetivo principal era construir duas páginas principais, sendo uma para consulta processual e a outra para exibição dos dados da consulta. 
+  Desafio técnico proposto pelo Jusbrasil. O objetivo do projeto era construir duas páginas principais: uma para consulta processual e a outra para exibição dos dados da consulta.
 
 ## 2. Considerações Técnicas
 
@@ -45,7 +44,7 @@
 ### 2.1 Planejamento
   Para o planejamento do projeto utilizou-se a ferramenta Projecs do GitHub e as Metologias Ágeis.
 
-  <img src="src/img/planing.png" alt="planing" style="height: 500px;"/>
+  <img src="src/img/planning.png" alt="planing" style="height: 300px;"/>
 
 ### 2.2 Ferramentas utilizadas  
 
@@ -53,3 +52,5 @@
   * GitHub;
   * GitHub Projects;
   * Visual Studio Code;
+  
+### 2.3 Boilerplate
