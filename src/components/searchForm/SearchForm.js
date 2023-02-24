@@ -1,25 +1,20 @@
 import "./SearchForm.css";
+import { InputForm } from "./InputForm";
+import { SearchButton } from "./SearchButton";
 
 export const SearchForm = () => {
   return (
-    <section className="searchContainer">
+    <form action="/display" className="searchForm">
       <h1 className="searchTitle">Consulta Processual</h1>
       <p className="searchParagraph">
         Consultar processos por número em um clique
       </p>
-      <form action="/display" className="searchForm">
+      <div className="inputButtonContainer">
         <label className="labelSearch" htmlFor="numeroProcesso">
-          <input
-            className="inputSearch"
-            type="text"
-            name="numeroProcesso"
-            placeholder="1234567-88.2020.8.10.1234"
-          />
+          <InputForm />
         </label>
-        <button className="searchBtn" type="submit">
-          Buscar
-        </button>
-      </form>
-    </section>
+        <SearchButton />
+      </div>
+    </form>
   );
 };

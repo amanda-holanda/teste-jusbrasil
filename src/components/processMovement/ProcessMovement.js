@@ -1,6 +1,6 @@
-import "./ProcessMovements.css";
+import "./ProcessMovement.css";
 
-const processMovements = ({ date, descricao }) => {
+const ProcessMovement = ({ date, descricao }) => {
   return (
     <tr>
       <td className="processTable-data">
@@ -11,4 +11,4 @@ const processMovements = ({ date, descricao }) => {
   );
 };
 
-export default processMovements;
+export default ProcessMovement;
