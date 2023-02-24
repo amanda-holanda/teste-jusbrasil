@@ -1,5 +1,5 @@
 .returnButton {  
-  height: 6vh;
+  height: 36px;
   font-weight: bolder;
   text-transform: uppercase;
   background: rgb(46, 45, 45);
@@ -11,7 +11,7 @@
   text-align: center;
   text-decoration: none;
   align-self: flex-start;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 .returnButton:hover {
