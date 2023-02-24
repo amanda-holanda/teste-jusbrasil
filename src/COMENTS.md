@@ -51,7 +51,7 @@
 16. testes unitarios (branch: tests)
 - testes: 
 - HOME: SearchForm,inputHome, botãoHome.
-- DISPLAY: link de voltar, processList, process, processMovements
+- DISPLAY: processList, process, processMovements,link de voltar.
 
 a) refatorei o componente searchForm: antes o formulario estava dentro de uma section chamada searchContainer. decidi colocar tudo dentro da tag form para o codigo ficar mais limpo e eu conseguir importar o componente searchForm para fazer o teste dele.
 
