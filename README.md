@@ -23,20 +23,33 @@
 ## Índice
 
 * [1. Resumo do projeto](#1-resumo-do-projeto)
-* [2. Definição de produto](#2-definição-de-produto)
-* [3. Histórias de usuário](#3-histórias-de-usuário)
-* [4. Desenho da Interface de Usuário](#4-desenho-da-interface-de-usuário)  
-  * [4.1 Protótipos de alta fidelidade](#41-protótipos-de-alta-fidelidade)
-  * [4.2 Paleta de Cores](#42-paleta-de-cores)
-* [5. Testes manuais e de usabilidade](#5-testes-manuais-e-de-usabilidade)
-* [6. Considerações Técnicas](#6-considerações-técnicas)
-  * [6.1 Boilerplate](#61-boilerplate)
-  * [6.2 Planejamento](#62-planejamento)
-  * [6.3 Ferramentas utilizadas](#63-ferramentas-utilizadas)
+
+* [2. Considerações Técnicas](#2-considerações-técnicas)  
+  * [2.1 Planejamento](#21-planejamento)
+  * [2.2 Ferramentas utilizadas](#22-ferramentas-utilizadas)
   * [6.4 Tech Skills](#64-tech-skills)
-  * [6.5 Objetivos de aprendizagem](#65-objetivos-de-aprendizagem)
+  * [2.1 Boilerplate](#61-boilerplate)
+  
   
 ***
 
 
 ## 1. Resumo do projeto
+
+  Desafio técnico proposto pela Jusbrasil. O objetivo principal era construir duas páginas principais, sendo uma para consulta processual e a outra para exibição dos dados da consulta. 
+
+## 2. Considerações Técnicas
+
+  O projeto foi desenvolvido utilizando HTML, CSS, JavaScript e React.JS. O armazenamento da dados foi feito em um arquivo JSON populado na pasta do projeto (db.json).
+  
+### 2.1 Planejamento
+  Para o planejamento do projeto utilizou-se a ferramenta Projecs do GitHub e as Metologias Ágeis.
+
+  <img src="src/img/planing.png" alt="planing" style="height: 500px;"/>
+
+### 2.2 Ferramentas utilizadas  
+
+  * Git;
+  * GitHub;
+  * GitHub Projects;
+  * Visual Studio Code;
