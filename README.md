@@ -1,6 +1,4 @@
-<div align="center">
-
-  <img src="src/img" alt="Logo Jusbrasil" style="height: 200px" /> 
+<div align="center"> 
   
   # Jusbrasil: teste técnico 
   
@@ -17,11 +15,8 @@
   
   <br>
   
-  **Status do Projeto:** _Em andamento_ 
-  <!--
-  Confira o resultado do projeto [aqui]() ou no QR code a seguir:
-  <img src="" alt="QR code" />   
-  -->
+  **Status do Projeto:** _Concluido_ 
+  
 </div>
 
 
