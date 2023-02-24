@@ -59,6 +59,7 @@
   border-radius: 5px;
   border: 0;
   margin: 2% 0 0;
+  overflow: hidden;
 }
 
 .searchBtn:hover {
