@@ -26,23 +26,20 @@
 * [2. Considerações Técnicas](#2-considerações-técnicas)  
   * [2.1 Planejamento](#21-planejamento)
   * [2.2 Ferramentas utilizadas](#22-ferramentas-utilizadas)  
-  * [2.3 Boilerplate](#23-boilerplate)
-  
   
 ***
 
 
 ## 1. Resumo do projeto
 
-  Desafio técnico proposto pelo Jusbrasil. O objetivo do projeto era construir duas páginas principais: uma página de consulta processual (busca) e
-uma página de processos (exibição).
+  Desafio técnico proposto pela empresa Jusbrasil. O objetivo do projeto era construir duas páginas principais: uma página de consulta processual (busca) e uma página de processos (exibição).
 
 ## 2. Considerações Técnicas
 
-  O projeto foi desenvolvido utilizando HTML, CSS, JavaScript e React.JS. O armazenamento da dados foi feito em um arquivo JSON populado na pasta do projeto (db.json).
+  O projeto foi desenvolvido utilizando HTML, CSS, JavaScript e React.JS. O armazenamento de dados foi feito em um arquivo JSON populado na pasta`public/db.json` do projeto.
   
 ### 2.1 Planejamento
-  Para o planejamento do projeto utilizou-se a ferramenta Projecs do GitHub e as Metologias Ágeis.
+  Para o planejamento do projeto utilizou-se a ferramenta Projects do GitHub e as Metologias Ágeis.
 
   <img src="src/img/planning.png" alt="planing" style="height: 300px;"/>
 
@@ -52,5 +49,3 @@ uma página de processos (exibição).
   * GitHub;
   * GitHub Projects;
   * Visual Studio Code;
-  
-### 2.3 Boilerplate
