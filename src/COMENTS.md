@@ -54,6 +54,7 @@
 - DISPLAY: link de voltar, processList, process, processMovements
 
 a) refatorei o componente searchForm: antes o formulario estava dentro de uma section chamada searchContainer. decidi colocar tudo dentro da tag form para o codigo ficar mais limpo e eu conseguir importar o componente searchForm para fazer o teste dele.
+b) criei teste do componente searchForm para verificar se renderiza um formulário com os campos necessários (input e botão). para isso criei um mock simulando os dados.
 
 
 Obs: divisão de branchs (pagina de busca+layout, lógica da página de busca e do campo de exibicao, layout do campo de exibica + logica do campo de movimentacao, deploy)
