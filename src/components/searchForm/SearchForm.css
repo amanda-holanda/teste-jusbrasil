@@ -8,6 +8,7 @@
   margin: 0% 5% 3%;  
   height: 30vh;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .searchTitle {
@@ -38,13 +39,14 @@
 .inputSearch {
   border: 1px solid gray;
   height: 6vh;
-  width: 60vw;
-  font-size: 1em;
-  padding: 0 0 0 3%;
+  width: 55vw;
+  font-size: 1em;  
   background-color: white;
   border-radius: 5px;
   color: rgb(134, 132, 132);
   align-self: center;
+  max-width: 40vw;
+  text-align: center;
 }
 
 .searchBtn {
@@ -58,6 +60,7 @@
   border-radius: 5px;
   border: 0;
   margin: 2% 0 0;
+  overflow: hidden;
 }
 
 .searchBtn:hover {
@@ -84,6 +87,6 @@
 
 @media screen and (min-width: 1024px) {
   .inputSearch {
-    max-width: 18vw;
+    max-width: 19vw;
   }
 }
