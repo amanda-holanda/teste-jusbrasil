@@ -1,5 +1,5 @@
+import { ProcessMovementList } from "../processMovementList/ProcessMovementList";
 import "./Process.css";
-import ProcessMovements from "../processMovements/ProcessMovements";
 
 function Process({ cnj, partes, tribunal, date, movimentacao }) {
   return (
@@ -16,15 +16,7 @@ function Process({ cnj, partes, tribunal, date, movimentacao }) {
             </tr>
           </thead>
           <tbody>
-            {movimentacao.map((item) => {
-              return (
-                <ProcessMovements
-                  key={item.id}
-                  date={item.date}
-                  descricao={item.descricao}
-                />
-              );
-            })}
+            <ProcessMovementList movements={movimentacao} />
           </tbody>
         </table>
         <section className="processDetails">

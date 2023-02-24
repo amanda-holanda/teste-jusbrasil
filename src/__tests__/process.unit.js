@@ -21,19 +21,19 @@ const mockProcess = {
 
 describe("<Process />", () => {
   it("Renderiza as informações do processo que foram passadas em parametros por props", () => {
-    render(<Process {...mockProcess}/>);
+    render(<Process {...mockProcess} />);
 
-    const cnj = screen.getByText(mockProcess.cnj);
+    
+    const processTitle = screen.getByText(`Processo n. ${mockProcess.cnj} do ${mockProcess.tribunal}`)
     const autor = screen.getByText(mockProcess.partes.autor);
     const reu = screen.getByText(mockProcess.partes.reu);
-    const tribunal = screen.getByText(mockProcess.tribunal);
-    const date = screen.getByText(mockProcess.date);
+    
+    const date = screen.getByText(`Distribuído em ${mockProcess.date}`);
     //const movimentacao = screen.getByText(mockProcess.movimentacao);
 
-    expect(cnj).toBeInTheDocument();
+    expect(processTitle).toBeInTheDocument();
     expect(autor).toBeInTheDocument();
-    expect(reu).toBeInTheDocument();
-    expect(tribunal).toBeInTheDocument();
+    expect(reu).toBeInTheDocument();    
     expect(date).toBeInTheDocument();
   });
 });
