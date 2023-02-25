@@ -12,7 +12,7 @@
 .processDate {
   align-self: center;
   width: 85vw;
-  color: gray;
+  color: var(--gray);
   margin: 0 0 20px 0;
 }
 
@@ -37,12 +37,12 @@
 }
 
 .name {
-  color: blue;
+  color: var(--blue);
   font-size: 0.9em;
 }
 
 .caption {
-  color: gray;
+  color: var(--gray);
   font-size: 0.8em;
   margin-top: 0px;
 }

@@ -1,5 +1,5 @@
 .movementsDate {
-    color: gray;
+    color: var(--gray);
     font-size: 0.9em;
     margin: 1% 0 1%;
 }
