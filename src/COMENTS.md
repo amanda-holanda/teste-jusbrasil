@@ -20,7 +20,7 @@
 
 > O projeto foi desenvolvido utilizando HTML, CSS, JavaScript e React.JS. O armazenamento de dados foi feito no arquivo `/db.json` populado na pasta `/public` do projeto.
     
-> Para simular a consulta de um número de processo cadastrado válido, escreva o dado `5001682-88.2020.8.13.0671` ou altere apenas o último número dele. Ex: `5001682-88.2020.8.13.0672`, `5001682-88.2020.8.13.0673`.
+> Para simular a consulta de um número de processo cadastrado válido, escreva o dado `5001682-88.2020.8.13.0671` ou altere apenas o último número dele. Ex: 5001682-88.2020.8.13.067**2**, 5001682-88.2020.8.13.067**3**, etc.
 
 ## 2. Resumo
 
