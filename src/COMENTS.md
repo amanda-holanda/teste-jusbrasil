@@ -40,6 +40,8 @@
 
 > **Pasta routes:** criei um arquivo `index.js` na pasta routes com objetivo de configurar as rotas do projeto.
 
+> **Responsividade/CSS:** as duas páginas são responsivas para dispositivos mobile, tablets e desktops. O desenvolvimento da responsividade foi feito utiliando a estratégia *mobile first*. Iniciei o desenvolvimento do CSS fazendo o seu reset no arquivo de CSS global (`src/index.css`) e fiz a padronização das cores utilizando o `root:` para deixar o código mais limpo. No desenvolvimento do layout utilizei tanto o `display: flex` como o `display: grid`.
+
 > **Botão de voltar na página de exibição:** criei um link em formato de botão para retornar à página principal, com o objetivo de melhorar a usabilidade.
 
 > **Refatoração das funções de filtro `filterData()` e fetch `fetchData()`:**

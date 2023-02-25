@@ -11,3 +11,11 @@
   align-items: center;
   padding: 5% 0 5%;
 }
+
+:root {
+  --darkgray: rgb(46, 45, 45);
+  --white: rgb(230, 224, 224);
+  --lightgray: rgb(211, 211, 211);
+  --gray: rgb(128, 128, 128);
+  --blue: rgb(13, 13, 247);
+}

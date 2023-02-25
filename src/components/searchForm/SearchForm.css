@@ -4,7 +4,7 @@
   align-items: center;  
   width: 85vw;
   flex-direction: column;
-  background-color: lightgray;
+  background-color: var(--lightgray);
   margin: 0% 5% 3%;  
   height: 30vh;
   border-radius: 5px;
@@ -37,13 +37,12 @@
 }
 
 .inputSearch {
-  border: 1px solid gray;
+  border: 1px solid var(--lightgray);
   height: 6vh;
   width: 55vw;
   font-size: 1em;  
-  background-color: white;
-  border-radius: 5px;
-  color: rgb(134, 132, 132);
+  background-color: var;
+  border-radius: 5px;  
   align-self: center;
   max-width: 40vw;
   text-align: center;
@@ -53,8 +52,8 @@
   height: 6vh;
   font-weight: bolder;
   text-transform: uppercase;
-  background: rgb(46, 45, 45);
-  color: white;
+  background: var(--darkgray);
+  color: var(--white);
   width: 25vw;
   font-size: 1em;
   border-radius: 5px;
