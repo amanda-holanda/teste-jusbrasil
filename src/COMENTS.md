@@ -87,7 +87,7 @@ Criei uma pastas `__tests__` para testar todos os componentes da pasta `componen
 
 ### Layout:
 
-> Trabalharia mais no layout para deix-lo mais semelhante ao da empresa.
+> Trabalharia mais no layout para deixá-lo mais semelhante ao da empresa.
 
 ### Consulta na página de exibição
 
